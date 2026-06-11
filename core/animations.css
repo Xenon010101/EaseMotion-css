@@ -905,7 +905,7 @@
 }
 
 .ease-rotate {
-  animation: ease-kf-rotate 1.2s linear var(--ease-animation-iterations, infinite);
+  animation: ease-kf-rotate 1.2s var(--ease-ease) var(--ease-animation-iterations, infinite);
 }
 
 .ease-pulse {
