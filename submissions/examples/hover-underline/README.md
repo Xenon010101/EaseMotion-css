@@ -1,27 +1,13 @@
-# ease-hover-underline
+# Animated Hover Underline
 
-Animated underline that draws left-to-right using background-size transition. Works on multi-line inline text.
+## 1. What does this do?
+Links with animated underlines on hover: slide from left, center, right, or a wavy underline effect.
 
-## Usage
-
+## 2. How is it used?
+Add `.underline-link` with a style variant (`.underline-left`, `.underline-center`, `.underline-right`, `.underline-wavy`) to any `<a>` tag.
 ```html
-<span class="ease-hover-underline">Hover for underline</span>
+<a href="#" class="underline-link underline-center">Link</a>
 ```
 
-## Variants
-
-| Class | Description |
-|---|---|
-| `ease-hover-underline` | Default underline draw |
-
-## Notes
-
-- Uses `background-size` transition for smooth underline
-- Works on multi-line inline text
-- Great for navigation links and body text
-- Respects `prefers-reduced-motion`
-
-## Submission
-
-- **Author:** SAPTARSHI-coder
-- **Files:** `style.css`, `demo.html`
+## 3. Why is it useful?
+Multiple underline animation styles in one lightweight CSS file. The gradient underline adds visual flair. All variants respect `prefers-reduced-motion`.
