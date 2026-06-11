@@ -1,0 +1,66 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  background: #0f172a;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.fab-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.fab-hint {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  font-size: 0.8125rem;
+  color: #64748b;
+}
+
+.pulse-fab {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #6c63ff, #a09af8);
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 4px 16px rgba(108, 99, 255, 0.4);
+  animation: fab-pulse 2s ease-in-out infinite;
+  transition: transform 0.2s, box-shadow 0.2s;
+  z-index: 10;
+}
+
+.pulse-fab:hover {
+  animation: none;
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 8px 24px rgba(108, 99, 255, 0.5);
+}
+
+@keyframes fab-pulse {
+  0%, 100% {
+    box-shadow: 0 4px 16px rgba(108, 99, 255, 0.4);
+  }
+  50% {
+    box-shadow: 0 4px 24px rgba(108, 99, 255, 0.6), 0 0 0 8px rgba(108, 99, 255, 0.15);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pulse-fab {
+    animation: none;
+  }
+}
