@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Widget Card</title>
+  <link rel="stylesheet" href="../../easemotion.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ease-flex ease-center" style="min-height: 100vh; background: #f1f5f9;">
+    <div class="ww-card">
+      <div class="ww-header">
+        <span class="ww-city">San Francisco</span>
+        <span class="ww-condition">Sunny</span>
+      </div>
+      <div class="ww-main">
+        <span class="ww-temp" id="wwTemp">72</span>
+        <span class="ww-unit">°F</span>
+      </div>
+      <div class="ww-details">
+        <div class="ww-detail">
+          <span class="ww-label">Humidity</span>
+          <span class="ww-value" id="wwHumidity">45%</span>
+        </div>
+        <div class="ww-detail">
+          <span class="ww-label">Wind</span>
+          <span class="ww-value" id="wwWind">12 mph</span>
+        </div>
+        <div class="ww-detail">
+          <span class="ww-label">UV Index</span>
+          <span class="ww-value" id="wwUv">5</span>
+        </div>
+      </div>
+      <button class="ww-btn" id="wwRefresh">Refresh</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
