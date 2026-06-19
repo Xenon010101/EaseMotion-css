@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Invoice Receipt</title>
+  <link rel="stylesheet" href="../../../easemotion.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="ease-invoice">
+    <div class="ease-invoice-header">
+      <div class="ease-invoice-logo">ACME</div>
+      <div>
+        <h1>INVOICE</h1>
+        <p>#INV-2026-0042</p>
+        <p>Date: June 19, 2026</p>
+      </div>
+    </div>
+
+    <div class="ease-invoice-body">
+      <div class="ease-invoice-billed">
+        <strong>Billed To</strong>
+        <p>Anmol Singh<br />123 Dev Lane<br />San Francisco, CA 94102</p>
+      </div>
+
+      <table class="ease-invoice-table">
+        <thead>
+          <tr>
+            <th>Description</th>
+            <th>Qty</th>
+            <th>Price</th>
+            <th>Amount</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="ease-invoice-row ease-row-enter" style="--ease-row-delay: 0s;">
+            <td>UI/UX Design — Dashboard</td>
+            <td>2</td>
+            <td>$750.00</td>
+            <td>$1,500.00</td>
+          </tr>
+          <tr class="ease-invoice-row ease-row-enter" style="--ease-row-delay: 0.1s;">
+            <td>Frontend Development</td>
+            <td>40</td>
+            <td>$95.00</td>
+            <td>$3,800.00</td>
+          </tr>
+          <tr class="ease-invoice-row ease-row-enter" style="--ease-row-delay: 0.2s;">
+            <td>API Integration</td>
+            <td>10</td>
+            <td>$110.00</td>
+            <td>$1,100.00</td>
+          </tr>
+          <tr class="ease-invoice-row ease-row-enter" style="--ease-row-delay: 0.3s;">
+            <td>QA & Testing</td>
+            <td>8</td>
+            <td>$85.00</td>
+            <td>$680.00</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="ease-invoice-totals">
+        <div class="ease-invoice-line"><span>Subtotal</span><span>$7,080.00</span></div>
+        <div class="ease-invoice-line"><span>Tax (8%)</span><span>$566.40</span></div>
+        <div class="ease-invoice-line ease-invoice-total"><span>Total</span><span>$7,646.40</span></div>
+      </div>
+    </div>
+
+    <div class="ease-invoice-footer">
+      <span class="ease-status-paid">Paid</span>
+      <p>Thank you for your business.</p>
+    </div>
+  </div>
+</body>
+</html>
