@@ -18,7 +18,7 @@ permissions:
 
 concurrency:
   group: auto-merge-${{ github.event.pull_request.number || github.run_id }}
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   gather-prs:
@@ -649,4 +649,5 @@ jobs:
               exit $exit_code
             fi
           fi
+
 
